@@ -1,0 +1,4 @@
+1) when you intall some packages on linux server but encounter the permiss errors, try this
+
+->pip install <libname> --user
+e.g. pip install imageio --user
