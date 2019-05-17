@@ -2,3 +2,6 @@
 
 ->pip install <libname> --user
 e.g. pip install imageio --user
+
+2) when you intall packages for a certain pathon, try this
+-> python3.5 -m pip install imageio --user
