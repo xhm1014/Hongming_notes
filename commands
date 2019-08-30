@@ -14,3 +14,6 @@ e.g. pip install imageio --user
 
 5) enter bash shell: -> bash
    exit bash shell : -> exit
+
+6) check linus release information
+-> cat /ect/os-release
