@@ -8,3 +8,6 @@ e.g. pip install imageio --user
 
 3) check gpu id from the terminal
 -> nvidia-smi
+
+4) linux server terminal command to check numpy verion, try this:
+-> python3.5 -c "import numpy; print(numpy.__version__)"
