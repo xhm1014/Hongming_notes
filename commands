@@ -17,3 +17,6 @@ e.g. pip install imageio --user
 
 6) check linus release information
 -> cat /ect/os-release
+
+7) the problem no module scipy.misc has imresize function in our gpu machine:
+my solution: python3.7 -m pip install scipy==1.1.0 --user
