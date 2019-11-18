@@ -23,3 +23,6 @@ my solution: python3.7 -m pip install scipy==1.1.0 --user
 
 8) how to check cuda, or cudnn verion, please see:
 https://medium.com/@changrongko/nv-how-to-check-cuda-and-cudnn-version-e05aa21daf6c
+
+9) how to check the version of toolbox installed with python? type the following for python3.5 in the shell:
+pip3.5 list
