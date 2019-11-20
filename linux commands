@@ -26,3 +26,29 @@ https://medium.com/@changrongko/nv-how-to-check-cuda-and-cudnn-version-e05aa21da
 
 9) how to check the version of toolbox installed with python? type the following for python3.5 in the shell:
 pip3.5 list
+
+-------------
+1). to check GPU information from command line:
+>>nvidia-smi
+
+2). to check tensorflow version:
+>>python -c 'import tensorflow as tf; print(tf.__version__)'
+
+3). to test if GPU machine supports GPU computation:
+>>python 3.5 testGPU.py
+
+where testGPU.py has following codes:
+
+import tensorflow as tf
+from tensorflow.python.client import device_lib
+
+def get_available_gpus():
+    local_device_protos = device_lib.list_local_devices()
+    return [x.name for x in local_device_protos if x.device_type == 'GPU']
+
+if __name__=='__main__':
+    print(tf.__version__)
+    name = get_available_gpus()
+    print("GPUS:{}".format(name))
+    
+ The outputs:...GPUS:['/device:GPU:0', '/device:GPU:1', '/device:GPU:2', '/device:GPU:3']
