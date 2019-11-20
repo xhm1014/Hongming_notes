@@ -1,2 +1,2 @@
-# linux_command_studying
-make notes for my learned linux commands
+# Hongming's notes
+make notes 
