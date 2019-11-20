@@ -1,0 +1,40 @@
+I installed anoconda in win10 into the default directories, but later i cannot find the directory where i installed in the computer.
+
+The following is the directory for my anaconda: C:\ProgramData\Anaconda3
+
+The following are problems I addressed:
+
+1) when clicking the Conda in the web browser, it reports the error: 
+Error Message:
+EnvironmentLocationNotFound: Not a conda environment
+
+my solution: follow this webpage: https://github.com/Anaconda-Platform/nb_conda/issues/66
+             go to the directory: C:\ProgramData\Anaconda3\Lib\site-packages\nb_conda
+             open envmanager.py file: 
+             Replace for env in info['envs']] with for env in info['envs'] if env != info['root_prefix']] in nb_conda/envmanager.py.
+             
+2) when click runing some code, error message: the ordinal 191 could not be lcoated in the dynamic link library
+                                               C:\ProgramData\Anaconda3\Library\bin\mkl_intel_thread.dll
+
+My tempory solution: open Anaconda Prompt, then type: set CONDA_DLL_SEARCH_MODIFICATION_ENABLE=1
+                     then type: juypter notebook -> to open jupyter in browser
+                     
+                     
+3) errors: no modules named tensorlow
+
+My temporary solution: run Anaconda Prompt as the adminitrator, then install tensorflow as:conda install -c conda-forge tensorflow
+                      then reopen jupyter notebook
+                      
+4) jupyter notebook debugger:
+my temporary solution: from IPython.core.debugger import Tracer
+               then: at the break point locaton: %debug (or Tracer()())# trigger pdb debuger
+               finally: quit # quit debugger
+               
+my second soluton: 1) add following code to trigger pdb debugger: import pdb
+                                                                  pdb.set_trace()
+                      click view -> Toggle Line Numbers # to have line numbers
+                      ctrl+enter to run program
+                                                                  b * (* represent a break line number) # to debug
+reference:
+https://blog.csdn.net/dlhlsc/article/details/84309410
+https://blog.csdn.net/sun_shengyun/article/details/52756633
