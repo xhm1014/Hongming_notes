@@ -27,7 +27,7 @@ https://medium.com/@changrongko/nv-how-to-check-cuda-and-cudnn-version-e05aa21da
 9) how to check the version of toolbox installed with python? type the following for python3.5 in the shell:
 pip3.5 list
 
--------------
+--------------------------------------------------------------------------------------------------------------------
 1). to check GPU information from command line:
 >>nvidia-smi
 
