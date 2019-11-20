@@ -6,3 +6,22 @@ https://forums.fast.ai/t/recommended-python-learning-resources/26888
 
 #Anaconda introduction in Chinese: 
 https://zhuanlan.zhihu.com/p/32925500
+
+-----------------------------------------------------------
+Pathology Resource links are as follows:
+
+(1) HistomicsML: an interactive machine learning system for analyzing whole slide imaging ditital pathology datasets.
+(https://histomicsml.readthedocs.io/en/latest/index.html)
+
+(2) QuPath: open software for quantitative pathology. 
+(https://qupath.github.io/)
+
+(3) CS230 deep learning:good learning and teaching materials for deep learning.
+(https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks?fbclid=IwAR1sbqk1TcGLY0hWmdplMWjZ-YdGc27Dh0oy0jcNdkLN89_4fPc4h3RsrOg)
+
+(4)python programming: good learning and teaching matrials for python.
+(https://realpython.com/python-variables/)
+
+(5)keras transfer learning: good examples for transfer learning.
+(https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
+(https://towardsdatascience.com/https-medium-com-manishchablani-useful-keras-features-4bac0724734c)
