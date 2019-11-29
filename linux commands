@@ -52,3 +52,8 @@ if __name__=='__main__':
     print("GPUS:{}".format(name))
     
  The outputs:...GPUS:['/device:GPU:0', '/device:GPU:1', '/device:GPU:2', '/device:GPU:3']
+ 
+ __________________________________________________________________________________________
+ 1. run python program and load parameters from a file:
+ 
+ >>python3.7 main_msi_tcga.py @./tests/config.txt    
