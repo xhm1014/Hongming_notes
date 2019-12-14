@@ -4,3 +4,7 @@ so I tried to install Torch on my own win10 desktop for code debugging.
 I have installed: python3.5, keras+tensorflow+cudav9.0 on my win10 desktop. I use pycharm for python coding.
 
 My objective is is to install another python3.7 with Torch on it.
+
+My successful steps are:
+(1) follow the steps shown in https://www.cnblogs.com/thunderLL/p/6643022.html to make sure two pythons compatible in win10
+------the key is: 1) add python install path to system environmental variables
