@@ -1,2 +1,6 @@
 Recently I suddenly found that Training with Pytorch on our sever is much faster than that with Keras, 
 so I tried to install Torch on my own win10 desktop for code debugging.
+
+I have installed: python3.5, keras+tensorflow+cudav9.0 on my win10 desktop. I use pycharm for python coding.
+
+My objective is is to install another python3.7 with Torch on it.
