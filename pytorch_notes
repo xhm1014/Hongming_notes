@@ -1,0 +1,4 @@
+1) how to select pytorch cuda you want to use:
+torch.cuda.set_device(1) # force to use cuda 1, by default alwasy cuda 0 is used
+torch.cuda.current_device() # return the index of cuda that is used, i.e., 0,1,...
+device=torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
