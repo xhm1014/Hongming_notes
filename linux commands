@@ -6,6 +6,14 @@ e.g. pip install imageio --user
 2) when you intall packages for a certain pathon, try this
 -> python3.5 -m pip install imageio --user
 
+uninstall packages installed on our server:
+-> pip3.5 unstalll torchmeta
+
+check version of installed packages:
+->pip3.5 list
+or 
+->pip3.5 list | grep torch
+
 3) check gpu id from the terminal
 -> nvidia-smi
 
