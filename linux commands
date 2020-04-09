@@ -30,6 +30,9 @@ or
 7) the problem no module scipy.misc has imresize function in our gpu machine:
 my solution: python3.7 -m pip install scipy==1.1.0 --user
 
+8) monitor GPU usage:
+->watch -d -n 0.5 nvidia-smi
+
 8) how to check cuda, or cudnn verion, please see:
 https://medium.com/@changrongko/nv-how-to-check-cuda-and-cudnn-version-e05aa21daf6c
 
