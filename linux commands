@@ -2,6 +2,7 @@
 
 ->pip install <libname> --user
 e.g. pip install imageio --user
+e.g., pip3.5 install scikit-image --user --upgrade
 
 2) when you intall packages for a certain pathon, try this
 -> python3.5 -m pip install imageio --user
