@@ -1,3 +1,9 @@
+ # QHS server 16T ssd:
+ (1)cd /data/xuh3
+ (2) df -h data # check the space of data directory
+ (3) cp -avr $HOME/projects/data/tcga_stad_slide/wsis/ /data/xuh3 # copy data from source to destination
+
+
 1) when you intall some packages on linux server but encounter the permiss errors, try this
 
 ->pip install <libname> --user
