@@ -1,7 +1,7 @@
 # Hongming's notes
 ## see the notes: win10_python3.5(keras)_python3.7(torch).docx if you want to install two pythons on win10, and one python using keras, another using torch
 
-win10+pycharm+install geopandas, where I encountered the errors to install by using pip, the soluions are:
+(1) win10+pycharm+install geopandas, where I encountered the errors to install by using pip, the soluions are:
 https://stackoverflow.com/questions/34427788/how-to-successfully-install-pyproj-and-geopandas
 
 Under windows
@@ -14,3 +14,6 @@ pip install filename.whl
 Finally:
 
 pip install geopandas
+
+In my case: I downloaded: GDAL‑3.0.4‑cp37‑cp37m‑win_amd64.whl, Fiona-1.8.13-cp37-cp37m-win_amd64.whl
+first install GDAL, then Fiona
