@@ -16,4 +16,5 @@ Finally:
 pip install geopandas
 
 In my case: I downloaded: GDAL‑3.0.4‑cp37‑cp37m‑win_amd64.whl, Fiona-1.8.13-cp37-cp37m-win_amd64.whl
-first install GDAL, then Fiona
+
+first install GDAL, then Fiona, finally geopandas
