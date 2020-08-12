@@ -7,7 +7,7 @@ device=torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 if a machine has several GPUs, we could select a certain GPU to use by the following settings:
 
 It should be noted that if we put "data_transfroms = {} ..." out of the main_train() function, 
-we would encouter the strange CUDA Out of Memory Porblem (In other words, we can use the 8th GPU in this case).
+we would encouter the strange CUDA Out of Memory Porblem (In other words, we cannot use the 8th GPU in this case).
 If you encounter the same issues and know the reason, please let me know.
 
 import os
