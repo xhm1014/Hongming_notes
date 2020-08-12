@@ -4,3 +4,41 @@ torch.cuda.current_device() # return the index of cuda that is used, i.e., 0,1,.
 device=torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 
 2) ## strange CUDA Out of Memory Problem ##
+if a machine has several GPUs, we could select a certain GPU to use by the following settings:
+
+It should be noted that if we put "data_transfroms = {} ..." out of the main_train() function, 
+we would encouter the strange CUDA Out of Memory Porblem (In other words, we can use the 8th GPU in this case).
+If you encounter the same issues and know the reason, please let me know.
+
+import os
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"] = "7" # use the 8th GPU (GPU id usually starts from 0)
+
+def main_train(data_lib):
+    # step0: model
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    model=Attention()
+    model.to(device)   # use the 8th gpu
+    optimizer = optim.Adam(model.parameters(), lr=1e-4, betas=(0.9, 0.999), weight_decay=0.0001)
+
+    # step1: data process
+    ## strange error: if we put data_transforms={} outside the main_train(), it will cause cuda out of memory issues???
+    data_transforms = {}
+    data_transforms['train'] = transforms.Compose([
+        # transforms.RandomRotation(30),
+        # transforms.RandomAffine(20, translate=(0.2,0.2), scale=(0.8,1.2)),
+        # transforms.CenterCrop(512),
+        transforms.Resize(224),
+        transforms.RandomHorizontalFlip(),
+        transforms.RandomVerticalFlip(),
+        # Norm(),
+        transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.2),
+        transforms.RandomGrayscale(p=0.2),
+        transforms.ToTensor(),
+    ])
+    data_transforms['valid'] = transforms.Compose([
+        # transforms.CenterCrop(512),
+        transforms.Resize(224),
+        # Norm(),
+        transforms.ToTensor(),
+    ])
