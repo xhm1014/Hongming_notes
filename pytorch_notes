@@ -42,3 +42,7 @@ def main_train(data_lib):
         # Norm(),
         transforms.ToTensor(),
     ])
+    
+NOTE THAT: one reason I found is that 'Once we set gpu id used in this function, but we also defined gpu id in another function 
+which will be called, there will be conficts. Pytorch will still use default gpu:0 in this case'
+
