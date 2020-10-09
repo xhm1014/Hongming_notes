@@ -23,3 +23,5 @@ first install GDAL, then Fiona, finally geopandas
 
 ---------------------------------------------------------------------------------
 (1) The shell to access linux machine: (i) SSH Secure Shell Client (ii) MobaXterm
+
+(2) CPU, GPU, SSD -> speeding up deep learning
