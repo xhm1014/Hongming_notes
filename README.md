@@ -20,3 +20,6 @@ In my case: I downloaded: GDAL‑3.0.4‑cp37‑cp37m‑win_amd64.whl, Fiona-1.8
 first install GDAL, then Fiona, finally geopandas
 
 (2) in my lab win10 computer with python3.7, I installed pysal 2.0.0 successfully
+
+---------------------------------------------------------------------------------
+(1) The shell to access linux machine: (i) SSH Secure Shell Client (ii) MobaXterm
