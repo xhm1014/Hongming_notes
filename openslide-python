@@ -1,4 +1,4 @@
-###copenslide-python
+### openslide-python
 ## how to use openslide python on win10???
 
 (1) install openslide-python according to https://github.com/openslide/openslide-python
@@ -16,3 +16,10 @@ Note that: In order to make your changes be working, you need to close and resta
 tile.show() # to display the tile, where tile is a PIL image object
 
 scipy.misc.toimage(tile).show() # to display the tile using scipy package, where tile is a numpy array object
+
+### Notes for openslide python installed on Centos7 Server
+(1) refer to the weblink: https://www.pythonf.cn/read/108919
+Step 1: install compatible openslide: 
+# yum install openslide # see here: https://openslide.org/download/
+Step 2: create virtual environment in Anaconda (for version controls):
+# conda create n challenge python=3.6 # NOTE THAT: openslide is working well on python 3.6, but it has bugs on python 3.8 versions, in my testing, it reports 'OSError: /root/anaconda3/bin/../lib/libgobject-2.0.so.0: undefined symbol: g_uri_ref'
