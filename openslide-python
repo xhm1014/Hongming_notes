@@ -22,4 +22,9 @@ scipy.misc.toimage(tile).show() # to display the tile using scipy package, where
 Step 1: install compatible openslide: 
 # yum install openslide # see here: https://openslide.org/download/
 Step 2: create virtual environment in Anaconda (for version controls):
-# conda create n challenge python=3.6 # NOTE THAT: openslide is working well on python 3.6, but it has bugs on python 3.8 versions, in my testing, it reports 'OSError: /root/anaconda3/bin/../lib/libgobject-2.0.so.0: undefined symbol: g_uri_ref'
+# conda create n challenge python=3.6 # NOTE THAT: openslide is working well on python 3.6, but it has bugs on python 3.8 versions, 
+                                        in my testing, it reports 'OSError: /root/anaconda3/bin/../lib/libgobject-2.0.so.0: undefined symbol: g_uri_ref'
+# activate challenge
+# pip install openslide-python      # install Python interface to the OpenSlide library, refer to: https://pypi.org/project/openslide-python/
+
+### Notes for Pytorch installation on my Linux Server
