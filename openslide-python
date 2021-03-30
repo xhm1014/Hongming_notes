@@ -29,3 +29,10 @@ Step 2: create virtual environment in Anaconda (for version controls):
 
 ### Notes for Pytorch installation on my Linux Server
 # in my testing, when pytorch version installed is not compatible with the GPU, the data loading to GPU is extremely slow!!!!!!!!
+(1) In my server, I used RTX3090 GPU, my installed cuda version is: cuda 11.1 # refer to the weblink: https://zhuanlan.zhihu.com/p/279401802 
+(2) In my server, I installed this version in the challenge conda environment: see pytorch weblink: https://pytorch.org/get-started/previous-versions/
+## CUDA 11.0
+
+# conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=11.0 -c pytorch
+
+## the speed for installation is very slow, for solutions, please see the link: https://blog.csdn.net/watermelon1123/article/details/88122020
