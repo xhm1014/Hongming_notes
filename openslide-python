@@ -28,3 +28,4 @@ Step 2: create virtual environment in Anaconda (for version controls):
 # pip install openslide-python      # install Python interface to the OpenSlide library, refer to: https://pypi.org/project/openslide-python/
 
 ### Notes for Pytorch installation on my Linux Server
+# in my testing, when pytorch version installed is not compatible with the GPU, the data loading to GPU is extremely slow!!!!!!!!
