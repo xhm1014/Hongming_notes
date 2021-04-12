@@ -1,0 +1,8 @@
+(1) install CTex on win10, we can refer to this page: 
+
+https://blog.csdn.net/qq_37556330/article/details/106119151
+
+after installation, when I opened the winedt, the 'dvipdf' button is gray and cannot be used. to solve this problem, right click the .tex file and open it with Texworks, then first
+execute it with Texworks, after that open it with winedt, now the 'dvipdf' button is working
+
+(2) how to register the winedt for free use??
