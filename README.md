@@ -35,3 +35,5 @@ first install GDAL, then Fiona, finally geopandas
 
 ## Pan-cancer nuclei segmentation and classification demo:
 https://jgamper.github.io/PanNukeDataset/
+
+## about sparseconvnet installation on our server
