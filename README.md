@@ -40,3 +40,6 @@ https://jgamper.github.io/PanNukeDataset/
 
 (1) download the github files from the website: https://github.com/facebookresearch/SparseConvNet
 (2) run bash develop.sh, it may report the error: OSError: CUDA_HOME environment variable is not set. Please set it to your CUDA install root.
+    solve the problem by the following the solution: https://blog.csdn.net/OOFFrankDura/article/details/113632416
+    一次性:在命令行
+    export CUDA_HOME=/usr/local/cuda-X.X
