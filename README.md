@@ -39,3 +39,4 @@ https://jgamper.github.io/PanNukeDataset/
 ## about sparseconvnet installation on our server
 
 (1) download the github files from the website: https://github.com/facebookresearch/SparseConvNet
+(2) run bash develop.sh, it may report the error: OSError: CUDA_HOME environment variable is not set. Please set it to your CUDA install root.
