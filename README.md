@@ -39,7 +39,19 @@ https://jgamper.github.io/PanNukeDataset/
 ## about sparseconvnet installation on our server
 
 (1) download the github files from the website: https://github.com/facebookresearch/SparseConvNet
+
 (2) run bash develop.sh, it may report the error: OSError: CUDA_HOME environment variable is not set. Please set it to your CUDA install root.
     solve the problem by the following the solution: https://blog.csdn.net/OOFFrankDura/article/details/113632416
     一次性:在命令行
     export CUDA_HOME=/usr/local/cuda-X.X
+    
+(3) it may report the error that gcc version should be greater than 5, then following the solution in the web: https://www.cnblogs.com/jixiaohua/p/11732225.html
+1、安装centos-release-scl
+
+sudo yum install centos-release-scl
+2、安装devtoolset，注意，如果想安装7.*版本的，就改成devtoolset-7-gcc*，以此类推
+
+sudo yum install devtoolset-8-gcc*
+3、激活对应的devtoolset，所以你可以一次安装多个版本的devtoolset，需要的时候用下面这条命令切换到对应的版本
+
+scl enable devtoolset-8 bash
