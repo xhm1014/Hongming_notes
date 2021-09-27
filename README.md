@@ -37,3 +37,5 @@ first install GDAL, then Fiona, finally geopandas
 https://jgamper.github.io/PanNukeDataset/
 
 ## about sparseconvnet installation on our server
+
+(1) download the github files from the website: https://github.com/facebookresearch/SparseConvNet
