@@ -75,3 +75,11 @@ if __name__=='__main__':
  1. run python program and load parameters from a file:
  
  >>python3.7 main_msi_tcga.py @./tests/config.txt    
+ 
+ 
+ ------------------------------------------------------------------------------------------
+ In the centos system, the default space for the root is 50, we want Resize root partition (or how to remove the default /home partition) on CentOS 7 online
+ 
+ Please see the weblinks: 
+ https://gist.github.com/troyfontaine/87091bd6a5c68f45dd62ced3d12bc377
+ https://cyberark-customers.force.com/s/article/PTA-How-to-expand-dev-mapper-cl-root-dev-mapper-centos-root
